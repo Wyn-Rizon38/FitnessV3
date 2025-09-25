@@ -1,0 +1,104 @@
+/* Make full page black */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Schedule container */
+.schedule-container {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    overflow-x: auto; /* Prevents table from breaking screen */
+}
+
+/* Gold heading */
+.text-gold {
+    color: #FFD700;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Table style */
+.table-dark {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.table-gold th {
+    background-color: #FFD700;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table td, 
+.table th {
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Buttons */
+.btn-warning {
+    background-color: #FFD700;
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-outline-warning {
+    color: #FFD700;
+    border-color: #FFD700;
+    font-weight: 600;
+}
+
+.btn-outline-warning:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* ===== Responsive Rules ===== */
+@media (max-width: 768px) {
+    .schedule-container {
+        padding: 15px;
+    }
+
+    .table th, 
+    .table td {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Make table scrollable on very small screens */
+    .schedule-container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table th, 
+    .table td {
+        padding: 5px;
+    }
+
+    h2, .text-gold {
+        font-size: 1.2rem;
+    }
+}
